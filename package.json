@@ -16,8 +16,7 @@
     "watch": "yarn serve & watch:*",
     "build:js": "webpack --mode=production",
     "watch:js": "onchange \"src/js\" -- webpack --mode=development",
-    "build": "yarn build:css & yarn build:images",
-    
+    "build": "yarn build:css & yarn build:images"
   },
   "author": "",
   "license": "ISC",
@@ -26,6 +25,8 @@
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.0",
     "browser-sync": "^2.27.10",
+    "eslint": "^8.29.0",
+    "eslint-webpack-plugin": "^3.2.0",
     "imagemin-cli": "^7.0.0",
     "node-sass": "^8.0.0",
     "onchange": "^7.1.0",
