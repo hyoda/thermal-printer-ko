@@ -8,7 +8,7 @@
     "css:scss": "node-sass --output-style compressed -o dist src/scss",
     "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css",
     "css:lint": "stylelint src/scss/*.scss --custom-syntax postcss-scss",
-    "build:css": "yarn run css:lint && css:scss && yarn run css:autoprefixer",
+    "build:css": "yarn run css:lint && yarn run css:scss && yarn run css:autoprefixer",
     "watch:css": "onchange \"src/scss\" -- yarn run build:css"
   },
   "author": "",
