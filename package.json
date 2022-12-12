@@ -13,8 +13,8 @@
     "build:images": "imagemin src/images/**/* --out-dir=dist/images",
     "watch:images": "onchange \"src/images\" -- yarn run build:images",
     "serve": "browser-sync start --server \"dist\" --files \"dist\"",
-    "watch": "yarn serve && watch:*",
-    "build": "yarn build:*"
+    "watch": "yarn serve & watch:*",
+    "build": "yarn build:css & yarn build:images"
   },
   "author": "",
   "license": "ISC",
