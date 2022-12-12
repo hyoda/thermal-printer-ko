@@ -9,12 +9,14 @@
     "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css",
     "css:lint": "stylelint src/scss/*.scss --custom-syntax postcss-scss",
     "build:css": "yarn run css:lint && yarn run css:scss && yarn run css:autoprefixer",
-    "watch:css": "onchange \"src/scss\" -- yarn run build:css"
+    "watch:css": "onchange \"src/scss\" -- yarn run build:css",
+    "serve": "browser-sync start --server \"dist\" --files \"dist\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.10",
     "node-sass": "^8.0.0",
     "onchange": "^7.1.0",
     "postcss": "^8.4.20",
