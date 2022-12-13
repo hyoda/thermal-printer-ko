@@ -16,7 +16,9 @@
     "watch": "yarn serve & watch:*",
     "build:js": "webpack --mode=production",
     "watch:js": "onchange \"src/js\" -- webpack --mode=development",
-    "build": "yarn build:css & yarn build:images"
+    "build:html": "posthtml -c posthtml.json",
+    "watch:html": "onchange \"src/views\" -- yarn run build:html",
+    "build": "yarn build:css & yarn build:images & yarn build:html"
   },
   "author": "",
   "license": "ISC",
